@@ -12,8 +12,11 @@
 <nav>
   <div class="nav-inner">
     <span class="nav-name">Manuel Tomasello</span>
-    <div class="lang-switch">
-      <a href="index.html" class="active">IT</a><span>/</span><a href="index-en.html">EN</a><span>/</span><a href="index-fr.html">FR</a>
+    <div class="nav-right">
+      <div class="lang-switch">
+        <a href="index.html" class="active">IT</a><span>/</span><a href="index-en.html">EN</a><span>/</span><a href="index-fr.html">FR</a>
+      </div>
+      <a href="#contatti" class="nav-cta">Contattami</a>
     </div>
   </div>
 </nav>
@@ -168,6 +171,31 @@
         <tr><td class="name">Inglese</td><td>B1</td><td>B2</td><td>B2</td><td>B2</td><td>B2</td></tr>
       </tbody>
     </table>
+  </section>
+
+  <section id="contatti">
+    <div class="section-head"><p class="label">Contatti</p><h2>Scrivimi per un progetto</h2></div>
+    <div class="contact-card">
+      <p class="contact-intro">Hai in mente un progetto di integrazione, automazione o digitalizzazione? Raccontamelo: leggo e rispondo personalmente a ogni messaggio.</p>
+      <form class="contact-form" id="contactForm" data-mailto="manuel_tomasello@yahoo.it" data-subject="Nuovo progetto — dal sito">
+        <div class="field">
+          <label for="cf-name">Nome</label>
+          <input id="cf-name" name="name" type="text" placeholder="Il tuo nome" required>
+        </div>
+        <div class="field">
+          <label for="cf-email">Email</label>
+          <input id="cf-email" name="email" type="email" placeholder="La tua email" required>
+        </div>
+        <div class="field full">
+          <label for="cf-message">Messaggio</label>
+          <textarea id="cf-message" name="message" rows="5" placeholder="Descrivi brevemente il tuo progetto o la tua idea..." required></textarea>
+        </div>
+        <div class="form-actions full">
+          <button type="submit" class="btn-primary">Invia messaggio</button>
+          <span class="form-hint" id="formHint">Si aprirà il tuo programma di posta con il messaggio già pronto.</span>
+        </div>
+      </form>
+    </div>
   </section>
 
   <footer>

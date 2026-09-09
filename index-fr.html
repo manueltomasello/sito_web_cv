@@ -12,8 +12,11 @@
 <nav>
   <div class="nav-inner">
     <span class="nav-name">Manuel Tomasello</span>
-    <div class="lang-switch">
-      <a href="index.html">IT</a><span>/</span><a href="index-en.html">EN</a><span>/</span><a href="index-fr.html" class="active">FR</a>
+    <div class="nav-right">
+      <div class="lang-switch">
+        <a href="index.html">IT</a><span>/</span><a href="index-en.html">EN</a><span>/</span><a href="index-fr.html" class="active">FR</a>
+      </div>
+      <a href="#contact" class="nav-cta">Me contacter</a>
     </div>
   </div>
 </nav>
@@ -168,6 +171,31 @@
         <tr><td class="name">Anglais</td><td>B1</td><td>B2</td><td>B2</td><td>B2</td><td>B2</td></tr>
       </tbody>
     </table>
+  </section>
+
+  <section id="contact">
+    <div class="section-head"><p class="label">Contact</p><h2>Écrivez-moi pour un projet</h2></div>
+    <div class="contact-card">
+      <p class="contact-intro">Vous avez un projet d'intégration, d'automatisation ou de digitalisation en tête ? Parlez-m'en : je lis et réponds personnellement à chaque message.</p>
+      <form class="contact-form" id="contactForm" data-mailto="manuel_tomasello@yahoo.it" data-subject="Nouveau projet — depuis le site">
+        <div class="field">
+          <label for="cf-name">Nom</label>
+          <input id="cf-name" name="name" type="text" placeholder="Votre nom" required>
+        </div>
+        <div class="field">
+          <label for="cf-email">Email</label>
+          <input id="cf-email" name="email" type="email" placeholder="Votre email" required>
+        </div>
+        <div class="field full">
+          <label for="cf-message">Message</label>
+          <textarea id="cf-message" name="message" rows="5" placeholder="Décrivez brièvement votre projet ou votre idée..." required></textarea>
+        </div>
+        <div class="form-actions full">
+          <button type="submit" class="btn-primary">Envoyer le message</button>
+          <span class="form-hint" id="formHint">Votre logiciel de messagerie s'ouvrira avec le message déjà prêt.</span>
+        </div>
+      </form>
+    </div>
   </section>
 
   <footer>

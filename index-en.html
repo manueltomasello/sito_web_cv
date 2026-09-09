@@ -12,8 +12,11 @@
 <nav>
   <div class="nav-inner">
     <span class="nav-name">Manuel Tomasello</span>
-    <div class="lang-switch">
-      <a href="index.html">IT</a><span>/</span><a href="index-en.html" class="active">EN</a><span>/</span><a href="index-fr.html" class="active">FR</a>
+    <div class="nav-right">
+      <div class="lang-switch">
+        <a href="index.html">IT</a><span>/</span><a href="index-en.html" class="active">EN</a><span>/</span><a href="index-fr.html">FR</a>
+      </div>
+      <a href="#contact" class="nav-cta">Contact me</a>
     </div>
   </div>
 </nav>
@@ -170,6 +173,31 @@
         <tr><td class="name">English</td><td>B1</td><td>B2</td><td>B2</td><td>B2</td><td>B2</td></tr>
       </tbody>
     </table>
+  </section>
+
+  <section id="contact">
+    <div class="section-head"><p class="label">Contact</p><h2>Write to me about a project</h2></div>
+    <div class="contact-card">
+      <p class="contact-intro">Have an integration, automation or digitalization project in mind? Tell me about it — I read and personally reply to every message.</p>
+      <form class="contact-form" id="contactForm" data-mailto="manuel_tomasello@yahoo.it" data-subject="New project — from the website">
+        <div class="field">
+          <label for="cf-name">Name</label>
+          <input id="cf-name" name="name" type="text" placeholder="Your name" required>
+        </div>
+        <div class="field">
+          <label for="cf-email">Email</label>
+          <input id="cf-email" name="email" type="email" placeholder="Your email" required>
+        </div>
+        <div class="field full">
+          <label for="cf-message">Message</label>
+          <textarea id="cf-message" name="message" rows="5" placeholder="Briefly describe your project or idea..." required></textarea>
+        </div>
+        <div class="form-actions full">
+          <button type="submit" class="btn-primary">Send message</button>
+          <span class="form-hint" id="formHint">Your email app will open with the message ready to send.</span>
+        </div>
+      </form>
+    </div>
   </section>
 
   <footer>
