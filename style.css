@@ -155,6 +155,8 @@ h1{
   color:var(--text-soft); max-width:50ch; margin:0 0 26px;
   opacity:0; animation:riseIn .7s ease forwards; animation-delay:.42s;
 }
+.hero-desc:has(+ .hero-desc){ margin-bottom:14px; }
+h1 > span{ display:block; text-wrap:balance; }
 .contact-row{
   display:flex; flex-wrap:wrap; gap:8px 22px; font-size:.92rem; align-items:center;
   opacity:0; animation:riseIn .7s ease forwards; animation-delay:.54s;
