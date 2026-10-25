@@ -2,18 +2,27 @@
 <html lang="en">
 <head>
 <meta charset="UTF-8">
+<script>/* sequenza di avvio: una volta per sessione, mai con movimento ridotto */
+(function(d){d.classList.add('js');try{if(!matchMedia('(prefers-reduced-motion: reduce)').matches&&!sessionStorage.getItem('mt-boot')){d.classList.add('boot');sessionStorage.setItem('mt-boot','1');setTimeout(function(){d.classList.remove('boot')},2600);}}catch(e){}})(document.documentElement);
+</script>
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Manuel Tomasello — IT Manager</title>
 <meta name="description" content="Manuel Tomasello, IT Manager. Infrastructure, ERP/OT integration, NIS2 compliance, industrial automation.">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<meta name="theme-color" content="#070E22">
 <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
-
-<header class="top">
+<div class="boot-overlay" aria-hidden="true">
+  <div class="boot-half boot-top"></div><div class="boot-half boot-bottom"></div>
+  <div class="boot-line"></div>
+  <div class="boot-name">Manuel Tomasello</div>
+</div>
+<div class="glow" aria-hidden="true"></div>
 <nav>
+  <div class="progress" aria-hidden="true"></div>
   <div class="nav-inner">
     <span class="nav-name">Manuel Tomasello</span>
     <div class="nav-right">
@@ -24,6 +33,8 @@
     </div>
   </div>
 </nav>
+<header class="top">
+  <canvas class="net" aria-hidden="true"></canvas>
   <section class="hero">
   <div class="hero-inner">
     <div class="hero-text">
@@ -147,6 +158,8 @@
           <p>Conceived and built from scratch to fix a gap in maintenance management and the invoice-to-asset workflow. Subject of the experimental thesis.</p>
         </div>
         <div class="stack">TypeScript · SQL · local SLM</div>
+        <button type="button" class="flow-toggle" aria-expanded="false" aria-controls="flow-1" data-open="Show the data flow" data-close="Hide the data flow">Show the data flow</button>
+        <div class="flow" id="flow-1" data-flow="Invoices|Local AI|SQL database|TypeScript web app|Predictive analysis" hidden></div>
       </div>
       <div class="project">
         <div>
@@ -154,6 +167,8 @@
           <p>Technical coordination between the machine vendor and the ERP consultant, extracting data via OPC-UA to access Industry 4.0 tax incentives.</p>
         </div>
         <div class="stack">SQL · OPC-UA · Crystal Reports</div>
+        <button type="button" class="flow-toggle" aria-expanded="false" aria-controls="flow-2" data-open="Show the data flow" data-close="Hide the data flow">Show the data flow</button>
+        <div class="flow" id="flow-2" data-flow="CNC machine|OPC-UA|SQL|ERP|Crystal Reports" hidden></div>
       </div>
       <div class="project">
         <div>
@@ -161,6 +176,8 @@
           <p>Machine data visualization through a Python middleware that exposes it as JSON on a local web server.</p>
         </div>
         <div class="stack">Beckhoff · Python · JSON</div>
+        <button type="button" class="flow-toggle" aria-expanded="false" aria-controls="flow-3" data-open="Show the data flow" data-close="Hide the data flow">Show the data flow</button>
+        <div class="flow" id="flow-3" data-flow="Beckhoff machine data|Python middleware|JSON|Local web server|HMI interface" hidden></div>
       </div>
       <div class="project">
         <div>
@@ -168,6 +185,8 @@
           <p>Real-time production counters for the shop floor, designed for display on wall-mounted screens.</p>
         </div>
         <div class="stack">Node.js · Express · MSSQL</div>
+        <button type="button" class="flow-toggle" aria-expanded="false" aria-controls="flow-4" data-open="Show the data flow" data-close="Hide the data flow">Show the data flow</button>
+        <div class="flow" id="flow-4" data-flow="Shop floor|MSSQL|Node.js · Express|Wall screens" hidden></div>
       </div>
     </div>
   </section>

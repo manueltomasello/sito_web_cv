@@ -2,18 +2,27 @@
 <html lang="fr">
 <head>
 <meta charset="UTF-8">
+<script>/* sequenza di avvio: una volta per sessione, mai con movimento ridotto */
+(function(d){d.classList.add('js');try{if(!matchMedia('(prefers-reduced-motion: reduce)').matches&&!sessionStorage.getItem('mt-boot')){d.classList.add('boot');sessionStorage.setItem('mt-boot','1');setTimeout(function(){d.classList.remove('boot')},2600);}}catch(e){}})(document.documentElement);
+</script>
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Manuel Tomasello — IT Manager</title>
 <meta name="description" content="Manuel Tomasello, IT Manager. Infrastructures, intégration ERP/OT, conformité NIS2, automatisation industrielle.">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<meta name="theme-color" content="#070E22">
 <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
-
-<header class="top">
+<div class="boot-overlay" aria-hidden="true">
+  <div class="boot-half boot-top"></div><div class="boot-half boot-bottom"></div>
+  <div class="boot-line"></div>
+  <div class="boot-name">Manuel Tomasello</div>
+</div>
+<div class="glow" aria-hidden="true"></div>
 <nav>
+  <div class="progress" aria-hidden="true"></div>
   <div class="nav-inner">
     <span class="nav-name">Manuel Tomasello</span>
     <div class="nav-right">
@@ -24,6 +33,8 @@
     </div>
   </div>
 </nav>
+<header class="top">
+  <canvas class="net" aria-hidden="true"></canvas>
   <section class="hero">
   <div class="hero-inner">
     <div class="hero-text">
@@ -147,6 +158,8 @@
           <p>Conçu et développé de A à Z pour combler une lacune dans la gestion des maintenances et dans le flux des factures liées aux actifs de l'entreprise. Sujet du mémoire de fin d'études expérimental.</p>
         </div>
         <div class="stack">TypeScript · SQL · SLM local</div>
+        <button type="button" class="flow-toggle" aria-expanded="false" aria-controls="flow-1" data-open="Afficher le flux" data-close="Masquer le flux">Afficher le flux</button>
+        <div class="flow" id="flow-1" data-flow="Factures|IA locale|Base SQL|Appli web TypeScript|Analyse prédictive" hidden></div>
       </div>
       <div class="project">
         <div>
@@ -154,6 +167,8 @@
           <p>Coordination technique entre le fournisseur de la machine et le consultant ERP, extraction de données via OPC-UA pour l'accès aux aides Industrie 4.0.</p>
         </div>
         <div class="stack">SQL · OPC-UA · Crystal Reports</div>
+        <button type="button" class="flow-toggle" aria-expanded="false" aria-controls="flow-2" data-open="Afficher le flux" data-close="Masquer le flux">Afficher le flux</button>
+        <div class="flow" id="flow-2" data-flow="Machine CNC|OPC-UA|SQL|ERP|Crystal Reports" hidden></div>
       </div>
       <div class="project">
         <div>
@@ -161,6 +176,8 @@
           <p>Visualisation des données machine via un middleware Python qui les rend disponibles au format JSON sur un serveur web local.</p>
         </div>
         <div class="stack">Beckhoff · Python · JSON</div>
+        <button type="button" class="flow-toggle" aria-expanded="false" aria-controls="flow-3" data-open="Afficher le flux" data-close="Masquer le flux">Afficher le flux</button>
+        <div class="flow" id="flow-3" data-flow="Données machine Beckhoff|Middleware Python|JSON|Serveur web local|Interface HMI" hidden></div>
       </div>
       <div class="project">
         <div>
@@ -168,6 +185,8 @@
           <p>Compteurs de production en temps réel pour l'atelier, conçus pour un affichage sur écrans muraux.</p>
         </div>
         <div class="stack">Node.js · Express · MSSQL</div>
+        <button type="button" class="flow-toggle" aria-expanded="false" aria-controls="flow-4" data-open="Afficher le flux" data-close="Masquer le flux">Afficher le flux</button>
+        <div class="flow" id="flow-4" data-flow="Atelier de production|MSSQL|Node.js · Express|Écrans muraux" hidden></div>
       </div>
     </div>
   </section>

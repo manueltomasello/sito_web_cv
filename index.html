@@ -2,18 +2,27 @@
 <html lang="it">
 <head>
 <meta charset="UTF-8">
+<script>/* sequenza di avvio: una volta per sessione, mai con movimento ridotto */
+(function(d){d.classList.add('js');try{if(!matchMedia('(prefers-reduced-motion: reduce)').matches&&!sessionStorage.getItem('mt-boot')){d.classList.add('boot');sessionStorage.setItem('mt-boot','1');setTimeout(function(){d.classList.remove('boot')},2600);}}catch(e){}})(document.documentElement);
+</script>
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Manuel Tomasello — IT Manager</title>
 <meta name="description" content="Manuel Tomasello, IT Manager. Infrastrutture, integrazione ERP/OT, compliance NIS2, automazione industriale.">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<meta name="theme-color" content="#070E22">
 <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
-
-<header class="top">
+<div class="boot-overlay" aria-hidden="true">
+  <div class="boot-half boot-top"></div><div class="boot-half boot-bottom"></div>
+  <div class="boot-line"></div>
+  <div class="boot-name">Manuel Tomasello</div>
+</div>
+<div class="glow" aria-hidden="true"></div>
 <nav>
+  <div class="progress" aria-hidden="true"></div>
   <div class="nav-inner">
     <span class="nav-name">Manuel Tomasello</span>
     <div class="nav-right">
@@ -24,6 +33,8 @@
     </div>
   </div>
 </nav>
+<header class="top">
+  <canvas class="net" aria-hidden="true"></canvas>
   <section class="hero">
   <div class="hero-inner">
     <div class="hero-text">
@@ -147,6 +158,8 @@
           <p>Ideato e sviluppato da zero per colmare una carenza nella gestione delle manutenzioni e nel flusso delle fatture verso i cespiti aziendali. Oggetto della tesi di laurea sperimentale.</p>
         </div>
         <div class="stack">TypeScript · SQL · SLM locale</div>
+        <button type="button" class="flow-toggle" aria-expanded="false" aria-controls="flow-1" data-open="Mostra il flusso" data-close="Nascondi il flusso">Mostra il flusso</button>
+        <div class="flow" id="flow-1" data-flow="Fatture|AI locale|Database SQL|Web app TypeScript|Analisi predittiva" hidden></div>
       </div>
       <div class="project">
         <div>
@@ -154,6 +167,8 @@
           <p>Coordinamento tecnico tra fornitore macchina e consulente ERP, estrazione dati via OPC-UA per l'accesso alle agevolazioni Industria 4.0.</p>
         </div>
         <div class="stack">SQL · OPC-UA · Crystal Reports</div>
+        <button type="button" class="flow-toggle" aria-expanded="false" aria-controls="flow-2" data-open="Mostra il flusso" data-close="Nascondi il flusso">Mostra il flusso</button>
+        <div class="flow" id="flow-2" data-flow="Macchina CNC|OPC-UA|SQL|ERP|Crystal Reports" hidden></div>
       </div>
       <div class="project">
         <div>
@@ -161,6 +176,8 @@
           <p>Visualizzazione dei dati macchina tramite un middleware Python che li rende disponibili in formato JSON su server web locale.</p>
         </div>
         <div class="stack">Beckhoff · Python · JSON</div>
+        <button type="button" class="flow-toggle" aria-expanded="false" aria-controls="flow-3" data-open="Mostra il flusso" data-close="Nascondi il flusso">Mostra il flusso</button>
+        <div class="flow" id="flow-3" data-flow="Dati macchina Beckhoff|Middleware Python|JSON|Server web locale|Interfaccia HMI" hidden></div>
       </div>
       <div class="project">
         <div>
@@ -168,6 +185,8 @@
           <p>Contatori di produzione in tempo reale per il reparto, pensati per la visualizzazione su schermi a muro.</p>
         </div>
         <div class="stack">Node.js · Express · MSSQL</div>
+        <button type="button" class="flow-toggle" aria-expanded="false" aria-controls="flow-4" data-open="Mostra il flusso" data-close="Nascondi il flusso">Mostra il flusso</button>
+        <div class="flow" id="flow-4" data-flow="Reparto produzione|MSSQL|Node.js · Express|Schermi a muro" hidden></div>
       </div>
     </div>
   </section>
