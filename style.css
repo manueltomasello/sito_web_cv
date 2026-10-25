@@ -32,7 +32,7 @@
 }
 
 *{ box-sizing:border-box; }
-html{ scroll-behavior:smooth; background:var(--void); }
+html{ scroll-behavior:smooth; background:var(--void); overflow-x:clip; }
 
 body{
   margin:0;
@@ -43,6 +43,7 @@ body{
   line-height:1.65;
   -webkit-font-smoothing:antialiased;
   overflow-x:hidden;
+  overflow-x:clip;   /* niente scorrimento laterale, senza rompere il menu fisso */
   position:relative;
   isolation:isolate;
 }
@@ -387,7 +388,7 @@ h3{ font-weight:700; letter-spacing:-.015em; color:var(--text); }
   padding-top:clamp(72px, 9vw, 120px);
 }
 #contatti::before, #contact::before, #kontakt::before{
-  content:""; position:absolute; left:-100vmax; right:-100vmax; top:0; height:1px;
+  content:""; position:absolute; left:calc(50% - 50vw); width:100vw; top:0; height:1px;
   background:linear-gradient(90deg, transparent, rgba(34,211,190,.55) 50%, transparent);
 }
 #contatti, #contact, #kontakt{ position:relative; }
