@@ -376,7 +376,11 @@ document.addEventListener('DOMContentLoaded', () => {
       fr: { missing: 'Veuillez remplir tous les champs avant d’envoyer.',
             invalid: 'Veuillez saisir une adresse email valide.',
             sent: 'C’est fait ! Votre messagerie vient de s’ouvrir — terminez l’envoi depuis là.',
-            label: 'Message de', from: 'De', email: 'Email', msg: 'Message' }
+            label: 'Message de', from: 'De', email: 'Email', msg: 'Message' },
+      de: { missing: 'Bitte füllen Sie vor dem Senden alle Felder aus.',
+            invalid: 'Bitte geben Sie eine gültige E-Mail-Adresse ein.',
+            sent: 'Erledigt! Ihr E-Mail-Programm hat sich geöffnet – schließen Sie den Versand dort ab.',
+            label: 'Nachricht von', from: 'Von', email: 'E-Mail', msg: 'Nachricht' }
     }[lang] || null;
     const tr = t || { missing: 'Please fill in all fields.', invalid: 'Invalid email address.',
                       sent: 'Your email app has opened.', label: 'Message from', from: 'From',

@@ -261,7 +261,9 @@ main > section:first-child{ border-top:none; }
 h2{
   font-weight:800; font-size:clamp(1.55rem, 2.5vw, 2rem); line-height:1.08; letter-spacing:-.03em;
   margin:0; color:var(--text); text-wrap:balance;
+  -webkit-hyphens:auto; hyphens:auto; overflow-wrap:break-word;
 }
+.nn-short{ display:none; }
 h2::before{ /* traccia che entra nel titolo */
   content:""; display:block; width:36px; height:1.5px; margin-bottom:16px;
   background:var(--signal); box-shadow:0 0 8px var(--signal);
@@ -377,18 +379,18 @@ h3{ font-weight:700; letter-spacing:-.015em; color:var(--text); }
 }
 
 /* ---------- Contatti ---------- */
-#contatti, #contact{
+#contatti, #contact, #kontakt{
   background:var(--night);
   box-shadow:0 0 0 100vmax var(--night);
   clip-path:inset(0 -100vmax);
   border-top:none;
   padding-top:clamp(72px, 9vw, 120px);
 }
-#contatti::before, #contact::before{
+#contatti::before, #contact::before, #kontakt::before{
   content:""; position:absolute; left:-100vmax; right:-100vmax; top:0; height:1px;
   background:linear-gradient(90deg, transparent, rgba(34,211,190,.55) 50%, transparent);
 }
-#contatti, #contact{ position:relative; }
+#contatti, #contact, #kontakt{ position:relative; }
 .contact-intro{ color:#D6DEEC; margin:0 0 32px; max-width:52ch; font-size:1.12rem; }
 .contact-form{ display:grid; grid-template-columns:1fr 1fr; gap:18px; }
 .field{ display:flex; flex-direction:column; gap:7px; }
@@ -446,12 +448,15 @@ footer{
   .nav-right{ gap:12px; }
   .nav-cta{ padding:7px 12px; }
 }
-@media (max-width:420px){
-  .lang-switch span{ margin:0 2px; }
-  .nav-inner{ gap:10px; }
+@media (max-width:480px){
+  .nav-inner{ gap:8px; padding-left:16px; padding-right:16px; }
   .nav-right{ gap:10px; }
-  .nav-name{ font-size:.9rem; gap:8px; }
-  .nav-cta{ font-size:.82rem; padding:7px 10px; }
+  .nav-name{ font-size:.88rem; gap:7px; }
+  .nn-full{ display:none; }
+  .nn-short{ display:inline; }
+  .lang-switch{ font-size:.8rem; display:flex; gap:7px; }
+  .lang-switch span{ display:none; }
+  .nav-cta{ font-size:.8rem; padding:7px 10px; }
 }
 @media (hover:none){ /* sui touch la griglia illuminata resta fissa in alto */
   body::after{ --mx:75vw; --my:18vh; }

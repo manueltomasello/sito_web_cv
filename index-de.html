@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+<meta charset="UTF-8">
+<script>/* sequenza di avvio: una volta per sessione, mai con movimento ridotto */
+(function(d){d.classList.add('js');try{if(!matchMedia('(prefers-reduced-motion: reduce)').matches&&!sessionStorage.getItem('mt-boot')){d.classList.add('boot');sessionStorage.setItem('mt-boot','1');setTimeout(function(){d.classList.remove('boot')},2600);}}catch(e){}})(document.documentElement);
+</script>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Manuel Tomasello — IT Manager</title>
+<meta name="description" content="Manuel Tomasello, IT-Manager. Infrastruktur, ERP/OT-Integration, NIS2-Compliance, industrielle Automatisierung.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<meta name="theme-color" content="#070E22">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="boot-overlay" aria-hidden="true">
+  <div class="boot-half boot-top"></div><div class="boot-half boot-bottom"></div>
+  <div class="boot-line"></div>
+  <div class="boot-name">Manuel Tomasello</div>
+</div>
+<div class="glow" aria-hidden="true"></div>
+<nav>
+  <div class="progress" aria-hidden="true"></div>
+  <div class="nav-inner">
+    <span class="nav-name"><span class="nn-full">Manuel</span><span class="nn-short" aria-hidden="true">M.</span> Tomasello</span>
+    <div class="nav-right">
+      <div class="lang-switch">
+        <a href="index.html">IT</a><span>/</span><a href="index-en.html">EN</a><span>/</span><a href="index-fr.html">FR</a><span>/</span><a href="index-de.html" class="active">DE</a>
+      </div>
+      <a href="#kontakt" class="nav-cta">Kontakt</a>
+    </div>
+  </div>
+</nav>
+<header class="top">
+  <canvas class="net" aria-hidden="true"></canvas>
+  <section class="hero">
+  <div class="hero-inner">
+    <div class="hero-text">
+      <h1><span>Ein Unternehmen ist mehr, als Sie sehen.</span> <span>Ich steuere den unsichtbaren Teil.</span></h1>
+      <p class="hero-desc">Ich bin IT-Manager in einem großen Unternehmen des biomedizinischen Sektors und verantworte dort ein breites Spektrum an IT-Themen: Richtlinien und Governance, Lieferantenmanagement, Infrastruktur und Netzwerke, Cybersecurity und NIS2-Compliance, die ich mit einer gezielten Weiterbildung begleitet habe. Vor allem sorge ich dafür, dass Produktionsmaschinen, Unternehmenssysteme und Menschen miteinander kommunizieren: Industrie-4.0-Integrationen auf Basis des Siemens-Standards OPC-UA, Digitalisierung von Arbeitsabläufen, maßgeschneiderte Automatisierungen und die Einführung von KI in die Fertigungsprozesse.</p>
+      <p class="hero-desc">In den letzten vier Jahren habe ich eng mit einem Business Controller zusammengearbeitet und dabei ein bereichsübergreifendes Verständnis der Geschäftsprozesse entwickelt, das über die IT hinausgeht: Einkauf, Produktion, Verwaltung, Logistik und Finanzen. Ich arbeite mit Daten in SQL – von der Ermittlung der Umsätze bis zu detaillierten Analysen ihrer Entwicklung. Diese Perspektive, verbunden mit meinem technischen Know-how, ermöglicht es mir, der Geschäftsleitung Steuerungsinstrumente an die Hand zu geben, die wirklich auf die Bedürfnisse des Unternehmens zugeschnitten sind.</p>
+      <div class="contact-row">
+        <a href="mailto:manuel_tomasello@yahoo.it">manuel_tomasello@yahoo.it</a>
+        <span class="sep">·</span>
+        <span>Modena, Italien</span>
+      </div>
+    </div>
+    <div class="hero-visual">
+        <svg class="schematic" viewBox="0 0 400 480" aria-hidden="true" focusable="false">
+          <g class="traces">
+            <path pathLength="1" d="M90 150 H37 V62"/>
+            <path pathLength="1" d="M64 51 H200 V100"/>
+            <path pathLength="1" d="M240 100 V31 H300"/>
+            <path pathLength="1" d="M310 161 H330"/>
+            <path pathLength="1" d="M310 250 H357 V300"/>
+            <path pathLength="1" d="M370 172 V300"/>
+            <path pathLength="1" d="M260 375 V441 H300"/>
+            <path pathLength="1" d="M130 375 V451 H64"/>
+            <path pathLength="1" d="M90 300 H20 V272"/>
+          </g>
+          <g class="pins">
+            <circle cx="90" cy="150" r="3"/><circle cx="200" cy="100" r="3"/><circle cx="240" cy="100" r="3"/>
+            <circle cx="310" cy="161" r="3"/><circle cx="310" cy="250" r="3"/><circle cx="260" cy="375" r="3"/>
+            <circle cx="130" cy="375" r="3"/><circle cx="90" cy="300" r="3"/>
+          </g>
+          <g class="chips">
+            <g><rect x="10" y="40" width="54" height="22" rx="4"/><text x="37" y="55">CNC</text></g>
+            <g><rect x="300" y="20" width="68" height="22" rx="4"/><text x="334" y="35">OPC-UA</text></g>
+            <g><rect x="330" y="150" width="54" height="22" rx="4"/><text x="357" y="165">ERP</text></g>
+            <g><rect x="330" y="300" width="54" height="22" rx="4"/><text x="357" y="315">SQL</text></g>
+            <g><rect x="300" y="430" width="54" height="22" rx="4"/><text x="327" y="445">NIS2</text></g>
+            <g><rect x="10" y="440" width="54" height="22" rx="4"/><text x="37" y="455">M365</text></g>
+            <g><rect x="0" y="250" width="40" height="22" rx="4"/><text x="20" y="265">AI</text></g>
+          </g>
+          <circle class="packet p1" r="3.2"/>
+          <circle class="packet p2" r="3.2"/>
+        </svg>
+      <figure class="portrait">
+        <img class="hero-photo" src="assets/manuel-tomasello.jpg" alt="Porträt von Manuel Tomasello">
+        <i class="mark tl"></i><i class="mark tr"></i><i class="mark bl"></i><i class="mark br"></i>
+      </figure>
+    </div>
+  </div>
+  </section>
+</header>
+
+<main class="wrap">
+
+  <section id="werdegang">
+    <div class="section-head"><h2>Beruflicher Werdegang</h2></div>
+    <div class="track">
+      <div class="track-line"><div class="track-line-fill"></div></div>
+
+      <div class="node current">
+        <div class="node-period">Ab 28.09.2026 <span class="tag">beginnt in Kürze</span></div>
+        <h3>IT Manager</h3>
+        <span class="org">Fertigungsunternehmen — Raum Modena</span>
+        <p>Neue Aufgabe als Leiter der IT-Abteilung: Infrastruktur, Sicherheit und Digitalisierungsprojekte in den Produktionsprozessen.</p>
+      </div>
+
+      <div class="node">
+        <div class="node-period">12.06.2023 – 25.09.2026</div>
+        <h3>IT Business Analyst und Support Specialist</h3>
+        <span class="org">Salami S.p.A. — Modena</span>
+        <p>Leitung von Projekten zur Anbindung der Produktionsmaschinen an das ERP-System, Entwicklung von Büroautomatisierungen, Migration der Unternehmenstelefonie, Governance für Microsoft 365 und KI sowie Mitwirkung an der NIS2- und DSGVO-Compliance.</p>
+        <ul>
+          <li>Anbindung von CNC-Maschinen an das ERP über SQL und den Siemens-Standard OPC-UA; Anpassung von Berichten mit Crystal Reports</li>
+          <li>Universitätsprojekt zu einer HMI-Oberfläche mit dem Beckhoff-Framework und einer Python/JSON-Middleware</li>
+          <li>Schulung der Bediener an Vertikallagersystemen und Pflege der Lieferantenbeziehungen</li>
+          <li>Python-Skripte zur Datenextraktion aus CNC-Teileprogrammen und zum automatisierten Versand von Berichten</li>
+          <li>Migration der Unternehmenstelefonie von SIP auf VoIP</li>
+          <li>Migration zu Microsoft 365, Verwaltung der Tenant-Richtlinien und der Richtlinien zur KI-Nutzung</li>
+          <li>Konzeption und Entwicklung einer Software für vorausschauende Wartung (Thema der Abschlussarbeit): eine TypeScript-Web-App mit lokaler KI für die Dateneingabe und die vorausschauende Analyse des Lebenszyklus von Bauteilen</li>
+          <li>Mitwirkung an der NIS2- und DSGVO-Konformität des Unternehmens, Helpdesk, Netzwerk-, Backup-, VM- und Active-Directory-Verwaltung</li>
+        </ul>
+      </div>
+
+      <div class="node">
+        <div class="node-period">07.02.2022 – 23.02.2022</div>
+        <h3>Systemtechniker (Schulpraktikum)</h3>
+        <span class="org">Sola Oscar &amp; C. S.r.l. — Vignola</span>
+        <p>Telefon- und Fernsupport über TeamViewer, Austausch von Hardware, Softwareinstallation auf Computern und Servern, Klonen von Festplatten, Installation von Plottern und Netzwerkkonfiguration.</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="kompetenzen">
+    <div class="section-head"><h2>Kompetenzbereiche</h2></div>
+    <div class="grid-panels">
+      <div class="panel">
+        <h3>Infrastruktur &amp; Sicherheit</h3>
+        <p>Netzwerkverwaltung, Backups, Virtualisierung, Active Directory, Microsoft 365 sowie NIS2- und DSGVO-Compliance.</p>
+      </div>
+      <div class="panel">
+        <h3>IT/OT-Integration</h3>
+        <p>Anbindung von Produktionsmaschinen an ERP-Systeme über SQL und OPC-UA, Industrie 4.0.</p>
+      </div>
+      <div class="panel">
+        <h3>ERP &amp; Unternehmenssoftware</h3>
+        <p>Integration und Konfiguration von Unternehmensanwendungen auf TeamSystem und SAGE X3.</p>
+      </div>
+      <div class="panel">
+        <h3>Entwicklung &amp; Automatisierung</h3>
+        <p>Python-Skripte, Dashboards und maßgeschneiderte Web-Apps zur Automatisierung von Büro- und Produktionsprozessen.</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="projekte">
+    <div class="section-head"><h2>Ausgewählte Projekte</h2></div>
+    <div class="projects">
+      <div class="project">
+        <div>
+          <h3>Software für vorausschauende Wartung</h3>
+          <p>Von Grund auf konzipiert und entwickelt, um eine Lücke in der Wartungsverwaltung und im Fluss der Rechnungen zum Anlagevermögen zu schließen. Thema der experimentellen Abschlussarbeit.</p>
+        </div>
+        <div class="stack">TypeScript · SQL · lokales SLM</div>
+        <button type="button" class="flow-toggle" aria-expanded="false" aria-controls="flow-1" data-open="Datenfluss anzeigen" data-close="Datenfluss ausblenden">Datenfluss anzeigen</button>
+        <div class="flow" id="flow-1" data-flow="Rechnungen|Lokale KI|SQL-Datenbank|TypeScript-Web-App|Vorausschauende Analyse" hidden></div>
+      </div>
+      <div class="project">
+        <div>
+          <h3>Anbindung CNC-Maschinen / ERP</h3>
+          <p>Technische Koordination zwischen Maschinenlieferant und ERP-Berater, Datenextraktion über OPC-UA für den Zugang zu den Industrie-4.0-Förderungen.</p>
+        </div>
+        <div class="stack">SQL · OPC-UA · Crystal Reports</div>
+        <button type="button" class="flow-toggle" aria-expanded="false" aria-controls="flow-2" data-open="Datenfluss anzeigen" data-close="Datenfluss ausblenden">Datenfluss anzeigen</button>
+        <div class="flow" id="flow-2" data-flow="CNC-Maschine|OPC-UA|SQL|ERP|Crystal Reports" hidden></div>
+      </div>
+      <div class="project">
+        <div>
+          <h3>HMI-Oberfläche — Universitätsprojekt</h3>
+          <p>Visualisierung von Maschinendaten über eine Python-Middleware, die sie im JSON-Format auf einem lokalen Webserver bereitstellt.</p>
+        </div>
+        <div class="stack">Beckhoff · Python · JSON</div>
+        <button type="button" class="flow-toggle" aria-expanded="false" aria-controls="flow-3" data-open="Datenfluss anzeigen" data-close="Datenfluss ausblenden">Datenfluss anzeigen</button>
+        <div class="flow" id="flow-3" data-flow="Beckhoff-Maschinendaten|Python-Middleware|JSON|Lokaler Webserver|HMI-Oberfläche" hidden></div>
+      </div>
+      <div class="project">
+        <div>
+          <h3>Produktions-Dashboard</h3>
+          <p>Produktionszähler in Echtzeit für die Fertigung, ausgelegt für die Anzeige auf Wandbildschirmen.</p>
+        </div>
+        <div class="stack">Node.js · Express · MSSQL</div>
+        <button type="button" class="flow-toggle" aria-expanded="false" aria-controls="flow-4" data-open="Datenfluss anzeigen" data-close="Datenfluss ausblenden">Datenfluss anzeigen</button>
+        <div class="flow" id="flow-4" data-flow="Fertigung|MSSQL|Node.js · Express|Wandbildschirme" hidden></div>
+      </div>
+    </div>
+  </section>
+
+  <section id="ausbildung">
+    <div class="section-head"><h2>Ausbildung</h2></div>
+    <div class="grid-panels">
+      <div class="panel">
+        <h3>Bachelor in Informationssystemtechnologien</h3>
+        <p>Universität Bologna — Imola · seit 20.09.2022</p>
+      </div>
+      <div class="panel">
+        <h3>Abschluss als IT-Techniker</h3>
+        <p>Istituto Tecnico Secondario di Secondo Grado P. Levi — Vignola · 2016 – 03.07.2022</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="faehigkeiten">
+    <div class="section-head"><h2>Technische Kenntnisse</h2></div>
+    <div class="taglist">
+      <span>SQL</span><span>OPC-UA</span><span>Python</span><span>TypeScript</span>
+      <span>Office 365 Admin</span><span>Power BI</span><span>Power Apps</span><span>Power Automate</span>
+      <span>TeamSystem</span><span>SAGE X3</span><span>WMS Modula</span>
+      <span>Kaspersky Security for Windows Server</span><span>IT-Infrastruktur</span>
+      <span>IT-Projektmanagement</span>
+    </div>
+  </section>
+
+  <section id="sprachen">
+    <div class="section-head"><h2>Sprachkenntnisse</h2></div>
+    <div class="table-scroll"><table class="lang-table">
+      <thead>
+        <tr><th>Sprache</th><th>Hören</th><th>Lesen</th><th>Zusammenhängendes Sprechen</th><th>An Gesprächen teilnehmen</th><th>Schreiben</th></tr>
+      </thead>
+      <tbody>
+        <tr><td class="name">Italienisch</td><td colspan="5">Muttersprache</td></tr>
+        <tr><td class="name">Französisch</td><td><span class="cefr" style="--n:4">B2</span></td><td><span class="cefr" style="--n:4">B2</span></td><td><span class="cefr" style="--n:4">B2</span></td><td><span class="cefr" style="--n:4">B2</span></td><td><span class="cefr" style="--n:3">B1</span></td></tr>
+        <tr><td class="name">Englisch</td><td><span class="cefr" style="--n:3">B1</span></td><td><span class="cefr" style="--n:4">B2</span></td><td><span class="cefr" style="--n:4">B2</span></td><td><span class="cefr" style="--n:4">B2</span></td><td><span class="cefr" style="--n:4">B2</span></td></tr>
+      </tbody>
+    </table></div>
+  </section>
+
+  <section id="kontakt">
+    <div class="section-head"><h2>Schreiben Sie mir zu Ihrem Projekt</h2></div>
+    <div class="contact-card">
+      <p class="contact-intro">Sie planen ein Integrations-, Automatisierungs- oder Digitalisierungsprojekt? Erzählen Sie mir davon – ich lese jede Nachricht und antworte persönlich.</p>
+      <form class="contact-form" id="contactForm" data-mailto="manuel_tomasello@yahoo.it" data-subject="Neues Projekt — über die Website">
+        <div class="field">
+          <label for="cf-name">Name</label>
+          <input id="cf-name" name="name" type="text" placeholder="Ihr Name" required>
+        </div>
+        <div class="field">
+          <label for="cf-email">E-Mail</label>
+          <input id="cf-email" name="email" type="email" placeholder="Ihre E-Mail-Adresse" required>
+        </div>
+        <div class="field full">
+          <label for="cf-message">Nachricht</label>
+          <textarea id="cf-message" name="message" rows="5" placeholder="Beschreiben Sie kurz Ihr Projekt oder Ihre Idee …" required></textarea>
+        </div>
+        <div class="form-actions full">
+          <button type="submit" class="btn-primary">Nachricht senden</button>
+          <span class="form-hint" id="formHint">Ihr E-Mail-Programm öffnet sich mit der fertigen Nachricht.</span>
+        </div>
+      </form>
+    </div>
+  </section>
+
+  <footer>
+    <span>Manuel Tomasello — Modena, Italien</span>
+    <span>Aktualisiert · September 2026</span>
+  </footer>
+
+</main>
+<script src="script.js"></script>
+</body>
+</html>
