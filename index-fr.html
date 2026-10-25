@@ -5,10 +5,14 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Manuel Tomasello — IT Manager</title>
 <meta name="description" content="Manuel Tomasello, IT Manager. Infrastructures, intégration ERP/OT, conformité NIS2, automatisation industrielle.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
+
+<header class="top">
 <nav>
   <div class="nav-inner">
     <span class="nav-name">Manuel Tomasello</span>
@@ -20,12 +24,10 @@
     </div>
   </div>
 </nav>
-
-<main class="wrap">
-
   <section class="hero">
+  <div class="hero-inner">
     <div class="hero-text">
-      <p class="kicker">IT Manager </p>
+      <p class="kicker">IT Manager</p>
       <h1><span>L'entreprise ne se limite pas au visible.</span> <span>Je pilote l'invisible.</span></h1>
       <p class="hero-desc">Je suis IT Manager dans une grande entreprise du secteur biomédical, où je gère un large éventail d'activités : politiques et gouvernance IT, gestion des fournisseurs, infrastructure et réseaux, cybersécurité et conformité NIS2, suivie grâce à un parcours de formation dédié. Surtout, je fais communiquer entre eux les machines de production, les systèmes de gestion et les personnes : intégrations Industrie 4.0 basées sur le standard Siemens OPC-UA, digitalisation des flux de travail, automatisations sur mesure et introduction de l'intelligence artificielle dans les processus de production.</p>
       <p class="hero-desc">En quatre ans, j'ai travaillé en étroite collaboration avec un contrôleur de gestion, ce qui m'a permis d'acquérir une vision transversale des processus de l'entreprise allant au-delà de l'IT : achats, production, administration, logistique et finance. Je travaille sur les données en SQL, de l'extraction du chiffre d'affaires jusqu'à des analyses détaillées de son évolution. Cette vision, associée aux compétences techniques, me permet de fournir à la direction générale des outils de pilotage réellement calibrés sur les besoins de l'entreprise.</p>
@@ -35,14 +37,49 @@
         <span>Modène, Italie</span>
       </div>
     </div>
-    <div class="hero-photo-wrap">
-      <div class="blob"></div>
-      <img class="hero-photo" src="assets/manuel-tomasello.jpg" alt="Portrait de Manuel Tomasello">
+    <div class="hero-visual">
+        <svg class="schematic" viewBox="0 0 400 480" aria-hidden="true" focusable="false">
+          <g class="traces">
+            <path pathLength="1" d="M90 150 H37 V62"/>
+            <path pathLength="1" d="M64 51 H200 V100"/>
+            <path pathLength="1" d="M240 100 V31 H300"/>
+            <path pathLength="1" d="M310 161 H330"/>
+            <path pathLength="1" d="M310 250 H357 V300"/>
+            <path pathLength="1" d="M370 172 V300"/>
+            <path pathLength="1" d="M260 375 V441 H300"/>
+            <path pathLength="1" d="M130 375 V451 H64"/>
+            <path pathLength="1" d="M90 300 H20 V272"/>
+          </g>
+          <g class="pins">
+            <circle cx="90" cy="150" r="3"/><circle cx="200" cy="100" r="3"/><circle cx="240" cy="100" r="3"/>
+            <circle cx="310" cy="161" r="3"/><circle cx="310" cy="250" r="3"/><circle cx="260" cy="375" r="3"/>
+            <circle cx="130" cy="375" r="3"/><circle cx="90" cy="300" r="3"/>
+          </g>
+          <g class="chips">
+            <g><rect x="10" y="40" width="54" height="22" rx="4"/><text x="37" y="55">CNC</text></g>
+            <g><rect x="300" y="20" width="68" height="22" rx="4"/><text x="334" y="35">OPC-UA</text></g>
+            <g><rect x="330" y="150" width="54" height="22" rx="4"/><text x="357" y="165">ERP</text></g>
+            <g><rect x="330" y="300" width="54" height="22" rx="4"/><text x="357" y="315">SQL</text></g>
+            <g><rect x="300" y="430" width="54" height="22" rx="4"/><text x="327" y="445">NIS2</text></g>
+            <g><rect x="10" y="440" width="54" height="22" rx="4"/><text x="37" y="455">M365</text></g>
+            <g><rect x="0" y="250" width="40" height="22" rx="4"/><text x="20" y="265">AI</text></g>
+          </g>
+          <circle class="packet p1" r="3.2"/>
+          <circle class="packet p2" r="3.2"/>
+        </svg>
+      <figure class="portrait">
+        <img class="hero-photo" src="assets/manuel-tomasello.jpg" alt="Portrait de Manuel Tomasello">
+        <i class="mark tl"></i><i class="mark tr"></i><i class="mark bl"></i><i class="mark br"></i>
+      </figure>
     </div>
+  </div>
   </section>
+</header>
+
+<main class="wrap">
 
   <section id="percorso">
-    <div class="section-head"><p class="label">Parcours professionnel</p><h2>Où j'ai travaillé</h2></div>
+    <div class="section-head"><h2>Où j'ai travaillé</h2></div>
     <div class="track">
       <div class="track-line"><div class="track-line-fill"></div></div>
 
@@ -80,7 +117,7 @@
   </section>
 
   <section id="aree">
-    <div class="section-head"><p class="label">Compétences</p><h2>Domaines de compétence</h2></div>
+    <div class="section-head"><h2>Domaines de compétence</h2></div>
     <div class="grid-panels">
       <div class="panel">
         <h3>Infrastructure &amp; sécurité</h3>
@@ -102,7 +139,7 @@
   </section>
 
   <section id="progetti">
-    <div class="section-head"><p class="label">Portfolio</p><h2>Projets sélectionnés</h2></div>
+    <div class="section-head"><h2>Projets sélectionnés</h2></div>
     <div class="projects">
       <div class="project">
         <div>
@@ -136,7 +173,7 @@
   </section>
 
   <section id="formazione">
-    <div class="section-head"><p class="label">Formation</p><h2>Études</h2></div>
+    <div class="section-head"><h2>Études</h2></div>
     <div class="grid-panels">
       <div class="panel">
         <h3>Licence en Technologies des Systèmes Informatiques</h3>
@@ -150,7 +187,7 @@
   </section>
 
   <section id="competenze">
-    <div class="section-head"><p class="label">Outils</p><h2>Compétences techniques</h2></div>
+    <div class="section-head"><h2>Compétences techniques</h2></div>
     <div class="taglist">
       <span>SQL</span><span>OPC-UA</span><span>Python</span><span>TypeScript</span>
       <span>Administration Office 365</span><span>Power BI</span><span>Power Apps</span><span>Power Automate</span>
@@ -161,21 +198,21 @@
   </section>
 
   <section id="lingue">
-    <div class="section-head"><p class="label">Langues</p><h2>Compétences linguistiques</h2></div>
-    <table class="lang-table">
+    <div class="section-head"><h2>Compétences linguistiques</h2></div>
+    <div class="table-scroll"><table class="lang-table">
       <thead>
         <tr><th>Langue</th><th>Écoute</th><th>Lecture</th><th>Expression orale</th><th>Interaction orale</th><th>Expression écrite</th></tr>
       </thead>
       <tbody>
         <tr><td class="name">Italien</td><td colspan="5">Langue maternelle</td></tr>
-        <tr><td class="name">Français</td><td>B2</td><td>B2</td><td>B2</td><td>B2</td><td>B1</td></tr>
-        <tr><td class="name">Anglais</td><td>B1</td><td>B2</td><td>B2</td><td>B2</td><td>B2</td></tr>
+        <tr><td class="name">Français</td><td><span class="cefr" style="--n:4">B2</span></td><td><span class="cefr" style="--n:4">B2</span></td><td><span class="cefr" style="--n:4">B2</span></td><td><span class="cefr" style="--n:4">B2</span></td><td><span class="cefr" style="--n:3">B1</span></td></tr>
+        <tr><td class="name">Anglais</td><td><span class="cefr" style="--n:3">B1</span></td><td><span class="cefr" style="--n:4">B2</span></td><td><span class="cefr" style="--n:4">B2</span></td><td><span class="cefr" style="--n:4">B2</span></td><td><span class="cefr" style="--n:4">B2</span></td></tr>
       </tbody>
-    </table>
+    </table></div>
   </section>
 
   <section id="contact">
-    <div class="section-head"><p class="label">Contact</p><h2>Écrivez-moi pour un projet</h2></div>
+    <div class="section-head"><h2>Écrivez-moi pour un projet</h2></div>
     <div class="contact-card">
       <p class="contact-intro">Vous avez un projet d'intégration, d'automatisation ou de digitalisation en tête ? Parlez-m'en : je lis et réponds personnellement à chaque message.</p>
       <form class="contact-form" id="contactForm" data-mailto="manuel_tomasello@yahoo.it" data-subject="Nouveau projet — depuis le site">

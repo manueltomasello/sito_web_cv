@@ -5,10 +5,14 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Manuel Tomasello — IT Manager</title>
 <meta name="description" content="Manuel Tomasello, IT Manager. Infrastructure, ERP/OT integration, NIS2 compliance, industrial automation.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
+
+<header class="top">
 <nav>
   <div class="nav-inner">
     <span class="nav-name">Manuel Tomasello</span>
@@ -20,12 +24,10 @@
     </div>
   </div>
 </nav>
-
-<main class="wrap">
-
   <section class="hero">
+  <div class="hero-inner">
     <div class="hero-text">
-      <p class="kicker">IT Manager · manufacturing sector</p>
+      <p class="kicker">IT Manager</p>
       <h1><span>A company is more than what you see.</span> <span>I lead the part you don't.</span></h1>
       <p class="hero-desc">I am an IT Manager at a large company in the biomedical sector, where I manage a broad range of IT areas: policies and governance, supplier management, infrastructure and networking, cybersecurity and NIS2 compliance, which I pursued through a dedicated training program. Above all, I enable communication between production machines, management systems, and people: Industry 4.0 integrations based on the Siemens OPC-UA standard, workflow digitization, custom automation, and the introduction of AI into manufacturing processes.</p>
       <p class="hero-desc">Over the past four years, I have worked closely with a business controller, gaining a cross-functional understanding of business processes that extends beyond IT to include procurement, production, administration, logistics, and finance. I work with data in SQL, from extracting revenue figures to running detailed analyses of their trends. This perspective, combined with my technical skills, enables me to provide senior management with decision-making tools that are truly tailored to the company’s needs.</p>
@@ -35,14 +37,49 @@
         <span>Modena, Italy</span>
       </div>
     </div>
-    <div class="hero-photo-wrap">
-      <div class="blob"></div>
-      <img class="hero-photo" src="assets/manuel-tomasello.jpg" alt="Portrait of Manuel Tomasello">
+    <div class="hero-visual">
+        <svg class="schematic" viewBox="0 0 400 480" aria-hidden="true" focusable="false">
+          <g class="traces">
+            <path pathLength="1" d="M90 150 H37 V62"/>
+            <path pathLength="1" d="M64 51 H200 V100"/>
+            <path pathLength="1" d="M240 100 V31 H300"/>
+            <path pathLength="1" d="M310 161 H330"/>
+            <path pathLength="1" d="M310 250 H357 V300"/>
+            <path pathLength="1" d="M370 172 V300"/>
+            <path pathLength="1" d="M260 375 V441 H300"/>
+            <path pathLength="1" d="M130 375 V451 H64"/>
+            <path pathLength="1" d="M90 300 H20 V272"/>
+          </g>
+          <g class="pins">
+            <circle cx="90" cy="150" r="3"/><circle cx="200" cy="100" r="3"/><circle cx="240" cy="100" r="3"/>
+            <circle cx="310" cy="161" r="3"/><circle cx="310" cy="250" r="3"/><circle cx="260" cy="375" r="3"/>
+            <circle cx="130" cy="375" r="3"/><circle cx="90" cy="300" r="3"/>
+          </g>
+          <g class="chips">
+            <g><rect x="10" y="40" width="54" height="22" rx="4"/><text x="37" y="55">CNC</text></g>
+            <g><rect x="300" y="20" width="68" height="22" rx="4"/><text x="334" y="35">OPC-UA</text></g>
+            <g><rect x="330" y="150" width="54" height="22" rx="4"/><text x="357" y="165">ERP</text></g>
+            <g><rect x="330" y="300" width="54" height="22" rx="4"/><text x="357" y="315">SQL</text></g>
+            <g><rect x="300" y="430" width="54" height="22" rx="4"/><text x="327" y="445">NIS2</text></g>
+            <g><rect x="10" y="440" width="54" height="22" rx="4"/><text x="37" y="455">M365</text></g>
+            <g><rect x="0" y="250" width="40" height="22" rx="4"/><text x="20" y="265">AI</text></g>
+          </g>
+          <circle class="packet p1" r="3.2"/>
+          <circle class="packet p2" r="3.2"/>
+        </svg>
+      <figure class="portrait">
+        <img class="hero-photo" src="assets/manuel-tomasello.jpg" alt="Portrait of Manuel Tomasello">
+        <i class="mark tl"></i><i class="mark tr"></i><i class="mark bl"></i><i class="mark br"></i>
+      </figure>
     </div>
+  </div>
   </section>
+</header>
+
+<main class="wrap">
 
   <section id="path">
-    <div class="section-head"><p class="label">Career path</p><h2>Where I've worked</h2></div>
+    <div class="section-head"><h2>Where I've worked</h2></div>
     <div class="track">
       <div class="track-line"><div class="track-line-fill"></div></div>
 
@@ -80,7 +117,7 @@
   </section>
 
   <section id="focus">
-    <div class="section-head"><p class="label">Expertise</p><h2>Areas of expertise</h2></div>
+    <div class="section-head"><h2>Areas of expertise</h2></div>
     <div class="grid-panels">
       <div class="panel">
         <h3>Infrastructure &amp; security</h3>
@@ -102,7 +139,7 @@
   </section>
 
   <section id="projects">
-    <div class="section-head"><p class="label">Portfolio</p><h2>Selected projects</h2></div>
+    <div class="section-head"><h2>Selected projects</h2></div>
     <div class="projects">
       <div class="project">
         <div>
@@ -136,7 +173,7 @@
   </section>
 
   <section id="education">
-    <div class="section-head"><p class="label">Education</p><h2>Studies</h2></div>
+    <div class="section-head"><h2>Studies</h2></div>
     <div class="grid-panels">
       <div class="panel">
         <h3>Bachelor's in Information Systems Technologies</h3>
@@ -150,7 +187,7 @@
   </section>
 
   <section id="skills">
-    <div class="section-head"><p class="label">Tools</p><h2>Technical skills</h2></div>
+    <div class="section-head"><h2>Technical skills</h2></div>
     <div class="taglist">
       <span>SQL</span><span>OPC-UA</span><span>Python</span><span>TypeScript</span>
       <span>Office 365 Admin</span><span>Power BI</span><span>Power Apps</span><span>Power Automate</span>
@@ -161,21 +198,21 @@
   </section>
 
   <section id="languages">
-    <div class="section-head"><p class="label">Languages</p><h2>Language skills</h2></div>
-    <table class="lang-table">
+    <div class="section-head"><h2>Language skills</h2></div>
+    <div class="table-scroll"><table class="lang-table">
       <thead>
         <tr><th>Language</th><th>Listening</th><th>Reading</th><th>Spoken production</th><th>Spoken interaction</th><th>Writing</th></tr>
       </thead>
       <tbody>
         <tr><td class="name">Italian</td><td colspan="5">Native</td></tr>
-        <tr><td class="name">French</td><td>B2</td><td>B2</td><td>B2</td><td>B2</td><td>B1</td></tr>
-        <tr><td class="name">English</td><td>B1</td><td>B2</td><td>B2</td><td>B2</td><td>B2</td></tr>
+        <tr><td class="name">French</td><td><span class="cefr" style="--n:4">B2</span></td><td><span class="cefr" style="--n:4">B2</span></td><td><span class="cefr" style="--n:4">B2</span></td><td><span class="cefr" style="--n:4">B2</span></td><td><span class="cefr" style="--n:3">B1</span></td></tr>
+        <tr><td class="name">English</td><td><span class="cefr" style="--n:3">B1</span></td><td><span class="cefr" style="--n:4">B2</span></td><td><span class="cefr" style="--n:4">B2</span></td><td><span class="cefr" style="--n:4">B2</span></td><td><span class="cefr" style="--n:4">B2</span></td></tr>
       </tbody>
-    </table>
+    </table></div>
   </section>
 
   <section id="contact">
-    <div class="section-head"><p class="label">Contact</p><h2>Write to me about a project</h2></div>
+    <div class="section-head"><h2>Write to me about a project</h2></div>
     <div class="contact-card">
       <p class="contact-intro">Have an integration, automation or digitalization project in mind? Tell me about it — I read and personally reply to every message.</p>
       <form class="contact-form" id="contactForm" data-mailto="manuel_tomasello@yahoo.it" data-subject="New project — from the website">
